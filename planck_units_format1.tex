@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modified version of template written by 
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=12pt]{scrartcl} % A4 paper and 12pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+%\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{mathtools}% http://ctan.org/pkg/mathtools
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{units}% To use \nicefrac
+\usepackage{cancel}% To use \cancel
+\usepackage{physymb}%To use r
+\usepackage{sectsty} % Allows customizing section commands
+\usepackage[dvipsnames]{xcolor}
+\usepackage{pgf,tikz}%To draw 
+\usepackage{pgfplots}%To draw 
+\usetikzlibrary{shapes,arrows}%To draw 
+\usetikzlibrary{patterns,fadings}
+ \usetikzlibrary{decorations.pathreplacing}%To draw curly braces 
+ \usetikzlibrary{snakes}%To draw 
+ \usetikzlibrary{spy}%To do zoom-in
+ \usepackage{setspace}%Set margins and such
+
+\definecolor{shadecolor}{rgb}{0.9,0.9,0.9}%setting shade color
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\setlength{\footskip}{30pt} 
+\setlength{\textheight}{680pt} 
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{
+{Planck Units and Their Significance} \\ % The assignment title
+}
+\author{La Zhen Han} % Your name
+\date{\normalsize\today} % Today's date or a custom date
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+Planck units are derived from physical constants in the universe. The quantities associated with each Planck unit are important in demonstrating the quantization of mass, distance, and time, as well as the limits of modern theories in physics, such as general relativity and quantum mechanics.
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\onehalfspacing %Set spacing 
+\section{Planck Units and Constants}%Start first section
+
+Three important natural constants from which Planck units are derived are the following [1, 2, 5, 9, 10]:
+\vspace{0.5cm}
+\begin{center}
+\begin{tabular}{ccc}%begin table with 3 centered columns
+    \hline
+    Description & Symbol & Value            \\ \hline
+    Speed of Light   &    c               & $299,297,458m/s$                    \\
+    Gravitational Constant    &   G       & $6.67428 \cdot 10^-11 m^3/kg \cdot s^2$                \\
+    Planck's Constant      & $\hbar$     & $1.0545 \cdot 10^-34 m^2kg/s$ \\
+ \end{tabular}
+ \end{center}
+
+\vspace{0.75cm}
+
+Combining these constants results in Planck units for length, mass, and time [1, 2, 9, 10]: 
+
+\vspace{0.5cm}
+\begin{center}
+\begin{tabular}{ccc}
+    \hline
+    Description & Symbol & Value            \\ \hline
+    Planck length   &    $l_p$               & $\sqrt{\frac{\hbar \cdot G}{c^3}}$                    \\
+    Planck mass    &   $m_p$       &           $\sqrt{\frac{\hbar \cdot c}{G}}$                      \\
+    Planck time       & $t_p$          &       $\sqrt{\frac{\hbar \cdot G}{c^5}}$               \\
+ \end{tabular}
+ \end{center}
+ \vspace{0.75cm}
+ 
+There are also other dimensions that can be calculated using natural constants, such as energy ($E_p$) [2, 8]. All of the resulting Planck units are the smallest possible units of their respective dimensions; while time, space, and matter may appear continuous to an observer, according to Planck values the universe functions in small, indivisible quantities [2, 4]. Such a division of a continuous sequence into discrete values is called quantization, a phenomenon which Max Planck, the namesake of the Planck constant and set of units, observed while studying blackbody radiation [2, 4, 7].
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Planck Units and Dimensionality}
+
+When performing calculations at Planck scales, the units of the physical constants can all become equal to one, resulting in $c = G = \hbar = 1$ [3, 5, 10]. If these quantities are set equal to one, the dimensions of the unit disappear and the quantities become dimensionless numerical values [3, 4, 5, 10].
+
+%----------------------------------------------------------------------------------------
+%	SECTION 3
+%----------------------------------------------------------------------------------------
+\section{Planck Scales and Theoretical Physics}
+
+There are some theories in physics that propose the Planck scale is the point at which quantum mechanics and gravity converge [8]. It has been suggested that quantum field theory and general relativity, two theories that predict different physical phenomena at different scales, may reconcile at Planck scales, perhaps producing interactions governed by quantum gravity, for which there is no observational evidence due to the extremely small distances predicted by $l_p$ [6]. In fact, due to the resolving power of technology, interactions at Planck scales may never be directly observed [6]. However, due to such miniscule scales, the mathematics of Planck unit calculations offer an interesting perspective on what may be a pivotal point for new and developing physics theories, since the fact that there is not a widely-recognized theory that combines relativity and quantum mechanics is a major unsolved problem in physics [6, 8].
+
+%----------------------------------------------------------------------------------------
+%	SECTION 4
+%----------------------------------------------------------------------------------------
+\newpage
+\begin{thebibliography}
+[[1] Baez, John C. "Higher-Dimensional Algebra and Planck-Scale Physics." Planck. N.p., 28 Jan. 1999. Web. 01 Oct. 2015.
+
+\vspace{0.3cm}
+\newline [2] "Blackbody Radiation." - The Physics Hypertextbook. N.p., n.d. Web. 01 Oct. 2015.
+
+\vspace{0.3cm}
+\newline [3] Coles, Peter. "The Joy of Natural Units." In the Dark. N.p., 05 Mar. 2010. Web. 01 Oct. 2015.
+
+\vspace{0.3cm}
+\newline [4] Coolman, Robert. "What Is Quantum Mechanics?" LiveScience. TechMedia Network, 26 Sept. 2014. Web. 01 Oct. 2015.
+
+\vspace{0.3cm}
+\newline [5] Guidry, Mike. "Appendix A: Natural Units." Gauge Field Theories. 2004. 511-14. Appendix A: Natural Units. Wiley Online Library, 29 Dec. 2007. Web. 01 Oct. 2015.
+
+\vspace {0.1cm}
+\newline [6] Jaffe, R. L. "Natural Units and the Scales of Fundamental Physics." MIT Quantum Theory Notes. N.p., 8 Feb. 2007. Web. 10 Oct. 2015.
+
+\vspace{0.3cm}
+\newline [7] "Quantization." Quantization. Wavelength Media, n.d. Web. 01 Oct. 2015.
+
+\vspace{0.3cm}
+\newline [8] "The Planck Scale: Relativity Meets Quantum Mechanics Meets Gravity." Einsteinlight. School of Physics UNSW, n.d. Web. 01 Oct. 2015.
+
+\vspace{0.3cm}
+\newline [9] "Planck Units | COSMOS." COSMOS - The SAO Encyclopedia of Astronomy. Swinburne University of Technology, n.d. Web. 01 Oct. 2015.
+
+\vspace{0.3cm}
+\newline [10] Tegmark, Max, Anthony Aguirre, Martin J. Rees, and Frank Wilczek. "Dimensionless Constants, Cosmology and Other Dark Matters." ArXiv. 11 Jan. 2006. Web. 10 Oct. 2015.
+
+\end{thebibliography}
+
+\end{document}
